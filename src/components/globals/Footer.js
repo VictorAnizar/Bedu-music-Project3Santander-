@@ -19,13 +19,9 @@ class Footer extends React.Component {
   render() {
     return (
       <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          minHeight: '100vh',
-        }}
+        
       >
-        <CssBaseline />
+       
 
         <Box
           component="footer"

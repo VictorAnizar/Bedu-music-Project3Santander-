@@ -105,12 +105,12 @@ class Header extends React.Component {
     render() {
         return (
 
-            <nav className="navbar" >
+            <nav className="navbar" style={{margin:0}}>
                 <ul className="list-butons-header" style={{ listStyle: "none", display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
-                    <li><Button variant="outlined">Inicio</Button></li>
-                    <li><Button variant="outlined">Tu música</Button></li>
-                    <li><Button variant="outlined">Descubre</Button></li>
-                    <li><Button variant="outlined">Contacto</Button></li>
+                    <li><Button variant="contained" color="secondary">Inicio</Button></li>
+                    <li><Button variant="contained" color="secondary">Tu música</Button></li>
+                    <li><Button variant="contained" color="secondary">Descubre</Button></li>
+                    <li><Button variant="contained" color="secondary">Contacto</Button></li>
                     <li>
                         <CustomizedMenus />
                     </li>
