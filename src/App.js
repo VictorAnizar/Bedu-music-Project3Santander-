@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="layout">
-        {/* <UserGreeting/>  */}
         <Header />
+        <UserGreeting/> 
         <ContentMain/>
         <MusicList/>
         <Footer />

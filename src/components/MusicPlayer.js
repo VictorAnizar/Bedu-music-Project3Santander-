@@ -20,9 +20,10 @@ const WallPaper = styled('div')({
   left: 0,
   zIndex:-1,
   overflow: 'hidden',
-  background: 'linear-gradient(rgb(255, 38, 142) 0%, rgb(255, 105, 79) 100%)',
+  backgroundImage: 'url(https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)',
   transition: 'all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s',
-  '&:before': {
+
+ /* '&:before': {
     content: '""',
     width: '140%',
     height: '140%',
@@ -42,7 +43,7 @@ const WallPaper = styled('div')({
     background:
       'radial-gradient(at center center, rgb(247, 237, 225) 0%, rgba(247, 237, 225, 0) 70%)',
     transform: 'rotate(30deg)',
-  },
+  },*/
 });
 
 const Widget = styled('div')(({ theme }) => ({
