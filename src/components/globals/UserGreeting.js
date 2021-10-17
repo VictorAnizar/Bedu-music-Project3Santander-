@@ -9,7 +9,7 @@ class UserGreeting extends Component {
         return (
             this.state.isLoggedIn ? 
             <h1 style={messageStyles}>Welcome to BEDU Music</h1> :
-            <h1 style={messageStyles}>U ready to listen to some good music?</h1>
+            <h4 style={messageStyles}>Are you ready to listen to some good music?</h4>
         )
     }
 }
@@ -18,7 +18,7 @@ class UserGreeting extends Component {
 
 /* style */
 const messageStyles = {
-    background: 'radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 100%)',
+    background: 'radial-gradient(circle, rgba(31,37,41,1) 0%, rgba(31,37,41,1) 100%)',
     textAlign: 'center',
     color: 'white'
 }
