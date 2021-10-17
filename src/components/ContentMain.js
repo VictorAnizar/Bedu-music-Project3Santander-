@@ -40,7 +40,16 @@ class ContentMain extends React.Component {
     }
     render() {
         return (
-            <div className="content-main" style={{display: "flex", flexDirection: "row", justifyContent:"space-around", alignItems:"center"}}>
+            <div 
+            className="content-main" 
+            style={
+                {
+                    display: "flex", 
+                    flexDirection: "row", 
+                    justifyContent:"space-around", 
+                    alignItems:"center",
+                    flexWrap:"wrap"
+                }}>
                 <GridCardsSongs songs={this.state.songs} style={{flexBasis: "70%"}}/>
                 <MusicPlayer style={{flexBasis: "30%"}}/>
             </div >
