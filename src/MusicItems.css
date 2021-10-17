@@ -1,0 +1,50 @@
+.list {
+  color: #fff;
+  width: 400px;
+  margin: 20px auto;
+  height: 50px;
+  background: linear-gradient(
+    0deg,
+    rgba(240, 99, 238, 1) 0%,
+    rgba(181, 56, 74, 1) 100%
+  );
+  border-radius: 5px;
+}
+.list p {
+  padding: 10px;
+  position: relative;
+  transition: ease-in-out;
+}
+.list p input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.list p input:focus {
+  outline: none;
+}
+.list p span {
+  position: absolute;
+  right: 10px;
+}
+.faicons {
+  margin: 0 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.itemsAnim-enter {
+  opacity: 0.01;
+}
+.itemsAnim-enter .itemsAnim-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.itemsAnim-leave {
+  opacity: 1;
+}
+.itemsAnim-leave .itemsAnim-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
