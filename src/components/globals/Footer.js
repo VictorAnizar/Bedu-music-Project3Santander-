@@ -34,7 +34,7 @@ class Footer extends React.Component {
             backgroundColor: (theme) =>
               theme.palette.mode === 'light'
                 ? theme.palette.grey[900]
-                : theme.palette.grey[300],
+                : theme.palette.grey[400],
           }}
         >
           <Container maxWidth="sm">

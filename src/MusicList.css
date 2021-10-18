@@ -1,50 +1,40 @@
 .background {
-  background: radial-gradient(
-    circle,
-    rgba(203, 251, 63, 1) 0%,
-    rgba(193, 42, 168, 1) 97%
-  );
+  background:  rgba(33, 37, 41, 1) 0%; 
   min-height: 600px;
   width: 500px;
   margin: 40px auto;
-  border: 10px solid pink;
+  border: 5px solid rgb(70, 70, 70);
 }
 
 #musicForm input {
-  background: linear-gradient(
-    0deg,
-    rgba(179, 128, 179, 1) 0%,
-    rgba(250, 80, 104, 1) 100%
-  );
+  background: white;
   border: 0;
-  color: #fff;
+  color: black;
   width: 300px;
   height: 50px;
   margin: 35px;
   padding: 0 20px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 5%;
 }
+
 #musicForm input::placeholder {
-  color: white;
-  font-weight: bold;
+  color: rgba(33, 37, 41, 1);
+  font-weight:300;
 }
 #musicForm input:focus {
   outline: none;
 }
 #musicForm button {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  height: 40px;
+  width: 100px;
+  margin-left: -3%;
+  border-radius: 5%;
   border: 0;
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: rgb(63, 63, 63);
   cursor: pointer;
-  color: rgb(241, 238, 23);
-  font-weight: bolder;
+  color: white;
+  font-weight: 400;
   font-size: 20px;
 }
 #musicForm button:focus {
