@@ -12,7 +12,11 @@ class App extends React.Component {
         <Header />
         <UserGreeting/> 
         <ContentMain/>
+<<<<<<< HEAD
         <MusicList/>
+=======
+        <MusicList/> 
+>>>>>>> main
         <Footer />
       </div>
     )

@@ -1,13 +1,9 @@
 .list {
-  color: #fff;
+  color: rgba(33, 37, 41, 1);
   width: 400px;
   margin: 20px auto;
   height: 50px;
-  background: linear-gradient(
-    0deg,
-    rgba(240, 99, 238, 1) 0%,
-    rgba(181, 56, 74, 1) 100%
-  );
+  background: white;
   border-radius: 5px;
 }
 .list p {
@@ -18,7 +14,7 @@
 .list p input {
   background-color: transparent;
   border: 0;
-  color: #fff;
+  color: rgba(33, 37, 41, 1);
   font-size: 16px;
   font-weight: bold;
 }

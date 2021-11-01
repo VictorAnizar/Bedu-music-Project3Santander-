@@ -50,8 +50,8 @@ class ContentMain extends React.Component {
                     alignItems:"center",
                     flexWrap:"wrap"
                 }}>
-                <GridCardsSongs songs={this.state.songs} style={{flexBasis: "70%"}}/>
                 <MusicPlayer style={{flexBasis: "30%"}}/>
+                <GridCardsSongs songs={this.state.songs} style={{flexBasis: "70%"}}/>
             </div >
         );
     }

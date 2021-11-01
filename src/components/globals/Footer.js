@@ -1,9 +1,9 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Button, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-bootstrap';
+// import CssBaseline from '@mui/material/CssBaseline';
+// import { Button, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-bootstrap';
 
 
 function Copyright() {
@@ -34,7 +34,7 @@ class Footer extends React.Component {
             backgroundColor: (theme) =>
               theme.palette.mode === 'light'
                 ? theme.palette.grey[900]
-                : theme.palette.grey[300],
+                : theme.palette.grey[400],
           }}
         >
           <Container maxWidth="sm">

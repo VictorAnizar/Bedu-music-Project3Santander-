@@ -9,7 +9,7 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -24,7 +24,7 @@ class CardSong extends React.Component {
         <Card sx={{ maxWidth: 345, borderRadius:3 }}>
             <CardHeader
                 avatar={
-                    <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                    <Avatar sx={{ bgcolor: grey[700] }} aria-label="recipe">
                         R
                     </Avatar>
                 }
@@ -38,9 +38,9 @@ class CardSong extends React.Component {
             />
             <CardMedia
                 component="img"
-                height="194"
-                image="https://mui.com/static/images/cards/paella.jpg"
-                alt="Paella dish"
+                height="250"
+                image="https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Guitar"
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">

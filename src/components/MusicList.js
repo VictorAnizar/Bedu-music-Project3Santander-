@@ -66,11 +66,7 @@ deleteItem = (key)=>{
 
 setUpdate= (text, key)=>{
     const items = this.state.items;
-    items.map(item => {
-        if (item.key===key){
-            item.text=text;
-        }
-    })
+    items.filter(item =>item.key===key).map(item=>item.text=text)
     this.setState({
         items:items
     })
