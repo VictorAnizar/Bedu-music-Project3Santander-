@@ -9,7 +9,9 @@ import Typography from '@mui/material/Typography';
 import { grey } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
 
 
 function AudioCards(props) {
@@ -18,21 +20,7 @@ function AudioCards(props) {
             {//console.log(props.albums)}
             }
             {props.albums.map((album, index) => (
-                <Card sx={{ maxWidth: 345, borderRadius: 3 }} key={index}>
-                    <CardHeader
-                        avatar={
-                            <Avatar sx={{ bgcolor: grey[700] }} aria-label="recipe">
-                                R
-                            </Avatar>
-                        }
-                        action={
-                            <IconButton aria-label="settings">
-                                <MoreVertIcon />
-                            </IconButton>
-                        }
-                        title={'this.props.song.title'}
-                        subheader="September 14, 2016"
-                    />
+                <Card sx={{ maxWidth: 345, borderRadius: 1, margin:10}} key={index}>
                     <CardMedia
                         component="img"
                         height={album.images[1].height}
@@ -54,10 +42,10 @@ function AudioCards(props) {
                             <ShareIcon />
                         </IconButton>
                     </CardActions>
-                    <button className={album.name}
-                        onClick={(e) => props.updatePlaylist(e, props.albums[index])}>
-                        <i className={album.name}>boton album - playlist</i>
-                    </button>
+                    <Button variamt="contained" className={album.name}
+                        onClick={(e) => props.updatePlaylist(e, props.albums[index])} variant="contained">
+                        <i className={album.name}> Escuchar Playlist</i>
+                    </Button>
                 </Card>
             ))
             };
