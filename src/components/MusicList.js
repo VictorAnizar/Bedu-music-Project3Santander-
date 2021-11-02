@@ -1,79 +1,73 @@
 import React, { Component } from 'react';
-import '../MusicList.css';
+import '../css/MusicList.css';
 import MusicItems from './MusicItems';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faTrash} from '@fortawesome/free-solid-svg-icons'
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import useState from 'react'
 library.add(faTrash);
 
-class MusicList extends Component {
-    state = {
-       items: [],
-       currentItem: {
-           text: '',
-           key: ''
-       } 
-    }
-    render() {
-    return (
-       <div className='background'>
-        <header>
-            <form id='musicForm' onSubmit={this.addItem}>
-                <input value={this.state.currentItem.text}
-                onChange= {this.handleInput}
-                type='text' placeholder='Song - Artist'></input>
-                <button type='submit'>Add</button>
-            </form>
-            <MusicItems items = {this.state.items} deleteItem =
-            {this.deleteItem} setUpdate={this.setUpdate}/>
-        </header>
-       </div>
-    )
-}
-
-
-//Methods:
-
-handleInput= (e) =>{
-    this.setState({
-        currentItem: {
+const MusicList = (props) => {
+    const [items, setItems] = React.useState([]);
+    const [currentItem, setCurrentItem] = React.useState({text: '',key: ''})
+    
+    const handleInput = (e) => {
+        setCurrentItem({
             text: e.target.value,
             key: Date.now()
-        }
-    })
-}
-
-addItem =(e) =>{
-    e.preventDefault();
-    const newItem = this.state.currentItem;
-    console.log(newItem)
-    if (newItem.text !== ''){
-        const newItems= [...this.state.items, newItem];
-        this.setState({
-            items: newItems,
-            currentItem: {
-                text: '',
-                key: ''
-            }
         })
     }
-}
-deleteItem = (key)=>{
-    const filteredItems = this.state.items.filter(item => 
-        item.key!== key);
-        this.setState({items:filteredItems})
-}
 
-setUpdate= (text, key)=>{
-    const items = this.state.items;
-    items.filter(item =>item.key===key).map(item=>item.text=text)
-    this.setState({
-        items:items
-    })
+    const addItem = (e) => {
+        e.preventDefault();
+        const newItem = currentItem;
+        console.log(newItem);
+        if (newItem.text !== '') {
+            const newItems = [...items, newItem];
+            setItems(newItems)
+            setCurrentItem({
+                text: '',
+                key: ''
+            })
+        }
+    }
+    const deleteItem = (key) => {
+        const filteredItems = items.filter(item =>
+            item.key !== key
+        );
+        setItems(filteredItems);
+    }
+
+    const setUpdate = (text, key) => {
+        const items = items;
+        items.map(item => {
+            if (item.key === key) {
+                item.text = text;
+            }
+        })
+        setItems(items);
+    }
+
+    return (
+        <div className='background'>
+            <header>
+                <form id='musicForm' onSubmit={addItem}>
+                    <input value={currentItem.text}
+                        onChange={handleInput}
+                        type='text' placeholder='Song - Artist'></input>
+                    <button type='submit'>Add</button>
+                </form>
+                <MusicItems items={items} deleteItem=
+                    {deleteItem} setUpdate={setUpdate} />
+            </header>
+        </div>
+    );
+
+
+
+
+   
+
 }
-};
-
-
 
 
 export default MusicList;

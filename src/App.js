@@ -5,8 +5,7 @@ import UserGreeting from './components/globals/UserGreeting';
 import ContentMain from './components/ContentMain';
 import MusicList from './components/MusicList';
 
-class App extends React.Component {
-  render() {
+const App =()=> {
     return (
       <div className="layout">
         <Header />
@@ -16,7 +15,6 @@ class App extends React.Component {
         <Footer />
       </div>
     )
-  }
 }
 
 export default App;
