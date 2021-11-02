@@ -17,8 +17,7 @@ function Copyright() {
   );
 }
 
-class Footer extends React.Component {
-  render() {
+const Footer =()=> {
     return (
       <Box
         
@@ -46,7 +45,7 @@ class Footer extends React.Component {
         </Box>
       </Box>
     );
-  }
+  
 }
 
 export default Footer;
