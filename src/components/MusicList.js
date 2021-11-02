@@ -47,16 +47,6 @@ const MusicList = (props) => {
         setItems(items);
     }
 
-<<<<<<< HEAD
-setUpdate= (text, key)=>{
-    const items = this.state.items;
-    items.filter(item =>item.key===key).map(item=>item.text=text)
-    this.setState({
-        items:items
-    })
-}
-};
-=======
     return (
         <div className='background'>
             <header>
@@ -72,7 +62,6 @@ setUpdate= (text, key)=>{
         </div>
     );
 
->>>>>>> 72aecf97ba135201d5eb6666de029fbe1345af68
 
 
 

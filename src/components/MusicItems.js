@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import React from 'react';
-import '../MusicItems.css';
-=======
 import React, { Component } from 'react';
 import '../css/MusicItems.css';
->>>>>>> 72aecf97ba135201d5eb6666de029fbe1345af68
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import FlipMove from 'react-flip-move';
 
