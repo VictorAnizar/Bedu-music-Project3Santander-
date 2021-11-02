@@ -9,9 +9,9 @@ const App =()=> {
     return (
       <div className="layout">
         <Header />
-        <UserGreeting/> 
+        {/* <UserGreeting/>  */}
         <ContentMain/>
-        <MusicList/> 
+        <MusicList/>
         <Footer />
       </div>
     )

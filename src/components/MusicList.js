@@ -3,7 +3,6 @@ import '../css/MusicList.css';
 import MusicItems from './MusicItems';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
-import useState from 'react'
 library.add(faTrash);
 
 const MusicList = (props) => {
