@@ -1,12 +1,7 @@
 import React from 'react';
 
 import { Navbar, Nav, Container, NavDropdown, Form, FormControl } from 'react-bootstrap'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-} from "react-router-dom";
+
 
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -47,10 +42,14 @@ const Header = () => {
                         </LinkContainer>
 
                         <NavDropdown title="Cuenta" align="end" menuVariant="dark" id="dropdown-menu-align-end">
-                            <NavDropdown.Item href="#action/3.1">Perfil</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Configuracion</NavDropdown.Item>
+                            <LinkContainer to="/perfil">
+                                <NavDropdown.Item >Perfil</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/configuracion">
+                                <NavDropdown.Item >Configuracion</NavDropdown.Item>
+                            </LinkContainer>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Cerrar Sesion</NavDropdown.Item>
+                            <NavDropdown.Item href="/logout">Cerrar Sesion</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

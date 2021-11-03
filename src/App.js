@@ -6,8 +6,10 @@ import ContentMain from './components/ContentMain';
 import MusicList from './components/MusicList';
 import Contacto from './components/Contacto';
 import TuMusica from './components/TuMusica';
-import Cuenta from './components/Cuenta';
+import Perfil from './components/Perfil';
 import Descubre from './components/Descubre';
+import Configuracion from './components/Configuracion';
+
 
 
 //imports para el ruteo
@@ -68,11 +70,20 @@ const App = () => {
           }}>
 
           </Route>
-          <Route exact path="/cuenta" render={() => {
+          <Route exact path="/perfil" render={() => {
 
             return (
               <>
-                <Cuenta />
+                <Perfil />
+              </>
+            )
+          }}>
+          </Route>
+          <Route exact path="/configuracion" render={() => {
+
+            return (
+              <>
+                <Configuracion />
               </>
             )
           }}>
