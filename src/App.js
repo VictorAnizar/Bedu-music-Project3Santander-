@@ -9,6 +9,7 @@ import TuMusica from './components/TuMusica';
 import Perfil from './components/Perfil';
 import Descubre from './components/Descubre';
 import Configuracion from './components/Configuracion';
+import PageNotFound from './components/PageNotFound';
 
 
 
@@ -88,8 +89,11 @@ const App = () => {
             )
           }}>
           </Route>
+          <Route component={PageNotFound} />
         </Switch>
       </Router>
+
+      <Footer/>
     </div>
 
   )
