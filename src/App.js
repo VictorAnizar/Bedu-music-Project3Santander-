@@ -19,6 +19,7 @@ import {
 } from "react-router-dom";
 
 import { LinkContainer } from 'react-router-bootstrap';
+import AudioPlayer from './components/AudioPlayer';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
               <>
                 <ContentMain />
                 <MusicList />
+                <Footer />
               </>
             )
 
