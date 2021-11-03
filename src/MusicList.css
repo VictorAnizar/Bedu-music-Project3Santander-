@@ -1,18 +1,5 @@
 .background {
-<<<<<<< HEAD
-  background: rgb(0, 0, 0);
-  min-height: 600px;
-  width: 500px;
-  margin: 40px auto;
-  border: 10px solid rgb(148, 137, 138);
-}
-
-#musicForm input {
-  background: rgb(235, 235, 241);
-  border: 0;
-  color: rgb(20, 18, 18);
-=======
-  background:  rgba(33, 37, 41, 1) 0%; 
+  background: rgba(33, 37, 41, 1) 0%;
   min-height: 600px;
   width: 500px;
   margin: 40px auto;
@@ -23,7 +10,6 @@
   background: white;
   border: 0;
   color: black;
->>>>>>> main
   width: 300px;
   height: 50px;
   margin: 35px;
@@ -33,13 +19,8 @@
 }
 
 #musicForm input::placeholder {
-<<<<<<< HEAD
-  color: black;
-  font-weight: bold;
-=======
   color: rgba(33, 37, 41, 1);
-  font-weight:300;
->>>>>>> main
+  font-weight: 300;
 }
 #musicForm input:focus {
   outline: none;
@@ -50,17 +31,10 @@
   margin-left: -3%;
   border-radius: 5%;
   border: 0;
-<<<<<<< HEAD
-  background: rgb(252, 252, 252);
-  cursor: pointer;
-  color: rgb(14, 13, 12);
-  font-weight: bolder;
-=======
   background: rgb(63, 63, 63);
   cursor: pointer;
   color: white;
   font-weight: 400;
->>>>>>> main
   font-size: 20px;
 }
 #musicForm button:focus {
