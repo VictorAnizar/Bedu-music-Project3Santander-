@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MusicPlayer from './MusicPlayer';
 import GridCardsSongs from './GridCardsSongs';
 // import { Grid } from '@mui/material';
 
-class ContentMain extends React.Component {
-    state = {
-        songs: [
+const ContentMain = ()=> {
+
+    const [songs, setSongs] = useState(
+        [
             {
                 id: 11,
                 title: "Song1",
@@ -37,8 +38,9 @@ class ContentMain extends React.Component {
                 }
             }
         ]
-    }
-    render() {
+    )
+
+    
         return (
             <div 
             className="content-main" 
@@ -51,10 +53,10 @@ class ContentMain extends React.Component {
                     flexWrap:"wrap"
                 }}>
                 <MusicPlayer style={{flexBasis: "30%"}}/>
-                <GridCardsSongs songs={this.state.songs} style={{flexBasis: "70%"}}/>
+                <GridCardsSongs songs={songs} style={{flexBasis: "70%"}}/>
             </div >
         );
-    }
+    
 }
 
 export default ContentMain;

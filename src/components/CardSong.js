@@ -16,15 +16,14 @@ import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 
-class CardSong extends React.Component {
+const CardSong = (props)=> {
   
 
-   render(){
     return (
         <Card sx={{ maxWidth: 345, borderRadius:3 }}>
             <CardHeader
                 avatar={
-                    <Avatar sx={{ bgcolor: grey[700] }} aria-label="recipe">
+                    <Avatar sx={{ bgcolor: grey[900] }} aria-label="recipe">
                         R
                     </Avatar>
                 }
@@ -33,7 +32,7 @@ class CardSong extends React.Component {
                         <MoreVertIcon />
                     </IconButton>
                 }
-                title={this.props.song.title}
+                title={props.song.title}
                 subheader="September 14, 2016"
             />
             <CardMedia
@@ -44,9 +43,9 @@ class CardSong extends React.Component {
             />
             <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                    Artist: {this.props.song.info.artist}
+                    Artist: {props.song.info.artist}
                     <br/>
-                    Gender: {this.props.song.info.gender}
+                    Gender: {props.song.info.gender}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
@@ -61,7 +60,7 @@ class CardSong extends React.Component {
            
         </Card>
     );
-   }
+   
 }
 
 export default CardSong;

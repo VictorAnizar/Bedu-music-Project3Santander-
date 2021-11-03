@@ -14,8 +14,8 @@ import React from 'react';
 // import { withEmotionCache, withTheme } from '@emotion/react';
 import {Navbar, Nav, Container, NavDropdown, Form, FormControl} from 'react-bootstrap'
 
-class Header extends React.Component {
-    render() {
+const Header = ()=> {
+
         return (
             <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
                 <Container>
@@ -49,7 +49,7 @@ class Header extends React.Component {
                 </Container>
             </Navbar>
         );
-    }
+    
 
 }
 
