@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import '../css/MusicItems.css';
+import React from 'react';
 import '../css/MusicItems.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import FlipMove from 'react-flip-move';
