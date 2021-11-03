@@ -6,7 +6,7 @@ import GridCardsSongs from './GridCardsSongs';
 const ContentMain = ()=> {
 
     const [songs, setSongs] = useState(
-         [
+        [
             {
                 id: 11,
                 title: "Song1",

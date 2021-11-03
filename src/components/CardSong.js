@@ -23,7 +23,7 @@ const CardSong = (props)=> {
         <Card sx={{ maxWidth: 345, borderRadius:3 }}>
             <CardHeader
                 avatar={
-                    <Avatar sx={{ bgcolor: grey[700] }} aria-label="recipe">
+                    <Avatar sx={{ bgcolor: grey[900] }} aria-label="recipe">
                         R
                     </Avatar>
                 }
