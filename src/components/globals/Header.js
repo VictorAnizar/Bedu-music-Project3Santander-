@@ -1,13 +1,27 @@
 import React from 'react';
 
 import { Navbar, Nav, Container, NavDropdown, Form, FormControl } from 'react-bootstrap'
-
+// import AuthService from "./services/auth.service";
 
 import { LinkContainer } from 'react-router-bootstrap';
 
 
 const Header = () => {
+    // const [currentUser, setCurrentUser] = useState(undefined);
 
+    // useEffect(() => {
+    //   const user = AuthService.getCurrentUser();
+  
+    //   if (user) {
+    //     setCurrentUser(user);
+    //     setShowModeratorBoard(user.roles.includes("ROLE_MODERATOR"));
+    //     setShowAdminBoard(user.roles.includes("ROLE_ADMIN"));
+    //   }
+    // }, []);
+  
+    // const logOut = () => {
+    //   AuthService.logout();
+    // };
     return (
         <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
             <Container>
@@ -42,14 +56,28 @@ const Header = () => {
                         </LinkContainer>
 
                         <NavDropdown title="Cuenta" align="end" menuVariant="dark" id="dropdown-menu-align-end">
-                            <LinkContainer to="/perfil">
-                                <NavDropdown.Item >Perfil</NavDropdown.Item>
-                            </LinkContainer>
-                            <LinkContainer to="/configuracion">
-                                <NavDropdown.Item >Configuracion</NavDropdown.Item>
-                            </LinkContainer>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="/logout">Cerrar Sesion</NavDropdown.Item>
+                            {/* {currentUser ? ( */}
+
+                                <>
+                                    <LinkContainer to="/perfil">
+                                        <NavDropdown.Item> Perfil</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/salir">
+                                    <NavDropdown.Item >Cerrar Sesion</NavDropdown.Item>
+                                    </LinkContainer>
+                                </>
+                            {/* ) : ( */}
+                                <>
+                                <NavDropdown.Divider />
+                                    <LinkContainer to="/login">
+                                        <NavDropdown.Item >Iniciar Sesión</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to="/register">
+                                        <NavDropdown.Item >Registrarse</NavDropdown.Item>
+                                    </LinkContainer>
+
+                                </>
+                            {/* )} */}
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
