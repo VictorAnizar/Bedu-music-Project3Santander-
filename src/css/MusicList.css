@@ -1,9 +1,5 @@
 .background {
-<<<<<<< HEAD
   background: rgba(33, 37, 41, 1) 0%;
-=======
-  background:  rgba(33, 37, 41, 1) 0%; 
->>>>>>> ivan
   min-height: 600px;
   width: 500px;
   margin: 40px auto;
@@ -24,11 +20,7 @@
 
 #musicForm input::placeholder {
   color: rgba(33, 37, 41, 1);
-<<<<<<< HEAD
   font-weight: 300;
-=======
-  font-weight:300;
->>>>>>> ivan
 }
 #musicForm input:focus {
   outline: none;

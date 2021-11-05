@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import "../css/Contacto.css";
 export const Contacto = () => {
   return (
@@ -59,13 +58,3 @@ export const Contacto = () => {
     </>
   );
 };
-=======
-
-const Contacto = () => {
-    return (<>
-        Tu Contacto component
-    </>)
-}
-
-export default Contacto;
->>>>>>> ivan

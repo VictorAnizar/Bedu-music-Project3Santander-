@@ -1,0 +1,35 @@
+.container-c {
+  background-color: rgb(12, 10, 10);
+}
+.article-container {
+  padding-top: 30px;
+}
+
+label {
+  font-size: 25px;
+}
+.container {
+  padding-bottom: 5rem;
+}
+
+.heading {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+p {
+  padding: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+}
+h1 {
+  color: aliceblue;
+  font-family: "Lato", sans-serif;
+
+  color: rgb(95, 121, 121);
+}
+label {
+  color: aliceblue;
+  font-family: "Lato", sans-serif;
+}

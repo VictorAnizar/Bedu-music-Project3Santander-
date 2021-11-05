@@ -4,7 +4,7 @@ import Header from "./components/globals/Header";
 import UserGreeting from "./components/globals/UserGreeting";
 import ContentMain from "./components/ContentMain";
 import MusicList from "./components/MusicList";
-import Contacto from "./components/Contacto";
+import Contact from "./components/Contact";
 import TuMusica from "./components/TuMusica";
 import Cuenta from "./components/Cuenta";
 import Descubre from "./components/Descubre";
@@ -63,7 +63,7 @@ const App = () => {
             render={() => {
               return (
                 <>
-                  <Contacto />
+                  <Contact />
                 </>
               );
             }}
