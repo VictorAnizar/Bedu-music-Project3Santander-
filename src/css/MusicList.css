@@ -1,5 +1,5 @@
 .background {
-  background:  rgba(33, 37, 41, 1) 0%; 
+  background: rgba(33, 37, 41, 1) 0%;
   min-height: 600px;
   width: 500px;
   margin: 40px auto;
@@ -20,7 +20,7 @@
 
 #musicForm input::placeholder {
   color: rgba(33, 37, 41, 1);
-  font-weight:300;
+  font-weight: 300;
 }
 #musicForm input:focus {
   outline: none;

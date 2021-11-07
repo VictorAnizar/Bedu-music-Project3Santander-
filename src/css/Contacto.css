@@ -1,0 +1,37 @@
+.contacto-container {
+  background-color: #272727;
+  background-image: url("https://somosmusica.cdbaby.com/wp-content/uploads/2014/08/Studio-Mic-650x407.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  height: 60rem;
+}
+.header {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: white;
+}
+.header:hover {
+  color: rgb(46, 19, 36);
+}
+.parrafo-1 {
+  color: white;
+  font-size: 2rem;
+  color: linear-gradient(
+    90deg,
+    rgba(165, 167, 185, 1) 0%,
+    rgb(179, 22, 179) 100%
+  );
+}
+.row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row-description {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  filter: blur(80);
+}
