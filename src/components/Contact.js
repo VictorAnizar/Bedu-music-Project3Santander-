@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs, { send } from "emailjs-com";
 import swal from "sweetalert";
 import "../css/contact.css";
+import Footer from "../components/globals/Footer";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { border } from "@mui/system";
@@ -39,6 +40,9 @@ const Contact = () => {
                 diferente...
               </span>
             </em>
+
+            <br />
+            <hr />
           </h1>
         </header>
         <div>
@@ -55,13 +59,58 @@ const Contact = () => {
             </strong>
             Todo esto, de la mano de Victor, Mark, Ivan, Fernando y Leonardo.
           </p>
+          <div
+            className="container border form-container"
+            style={{
+              marginTop: "4rem",
+              width: "60%",
+              backgroundImage: `url('')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+            <h1
+              style={{ marginTop: "25px", color: "white" }}
+              className="text-center heading"
+            >
+              Contáctanos para Solicitar Información Sobre el Proyecto
+            </h1>
+            <form
+              className="row"
+              style={{ margin: "25px 85px 75px 100px" }}
+              action=""
+              onSubmit={sendEmail}
+            >
+              <label htmlFor="">Nombre</label>
+              <input type="text" name="name" className="form-control" />
+
+              <label htmlFor="">Email</label>
+              <input type="email" name="user_email" className="form-control" />
+
+              <label htmlFor="">Mensage</label>
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="4"
+                className="form-control"
+              ></textarea>
+              <input
+                type="submit"
+                value="Send"
+                className="form-control btn btn-dark mt-4 submit"
+                onClick={alerta}
+              />
+            </form>
+          </div>
           <figure>
             <img
-              className="mt-3"
+              className="img img-fluid mt-3"
               src="https://api-manager.universia.net/coreplatform-document-management/api/document-management/public/qc2quhklmqbsm5"
               alt="BEDU logo"
             />
           </figure>
+          <hr />
           <p className="mt-5">
             Con la colaboración entre Santander Universidades y de BEDU, fue
             posible realizar este proyecto, ya que nos dieron todas las bases y
@@ -72,50 +121,7 @@ const Contact = () => {
           </p>
         </div>
       </article>
-      <div
-        className="container border form-container"
-        style={{
-          marginTop: "4rem",
-          width: "60%",
-          backgroundImage: `url('')`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-      >
-        <h1
-          style={{ marginTop: "25px", color: "white" }}
-          className="text-center heading"
-        >
-          Contáctanos para Solicitar Información Sobre el Proyecto
-        </h1>
-        <form
-          className="row"
-          style={{ margin: "25px 85px 75px 100px" }}
-          action=""
-          onSubmit={sendEmail}
-        >
-          <label htmlFor="">Nombre</label>
-          <input type="text" name="name" className="form-control" />
-
-          <label htmlFor="">Email</label>
-          <input type="email" name="user_email" className="form-control" />
-
-          <label htmlFor="">Mensage</label>
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="4"
-            className="form-control"
-          ></textarea>
-          <input
-            type="submit"
-            value="Send"
-            className="form-control btn btn-dark mt-4 submit"
-            onClick={alerta}
-          />
-        </form>
-      </div>
+      <Footer />
     </body>
   );
 };
