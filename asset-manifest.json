@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Bedu-music-Project3Santander-/static/css/main.38259eee.chunk.css",
-    "main.js": "/Bedu-music-Project3Santander-/static/js/main.706102d6.chunk.js",
-    "main.js.map": "/Bedu-music-Project3Santander-/static/js/main.706102d6.chunk.js.map",
+    "main.js": "/Bedu-music-Project3Santander-/static/js/main.45786145.chunk.js",
+    "main.js.map": "/Bedu-music-Project3Santander-/static/js/main.45786145.chunk.js.map",
     "runtime-main.js": "/Bedu-music-Project3Santander-/static/js/runtime-main.822c5cd1.js",
     "runtime-main.js.map": "/Bedu-music-Project3Santander-/static/js/runtime-main.822c5cd1.js.map",
     "static/css/2.c1256375.chunk.css": "/Bedu-music-Project3Santander-/static/css/2.c1256375.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.c1256375.chunk.css",
     "static/js/2.813452ff.chunk.js",
     "static/css/main.38259eee.chunk.css",
-    "static/js/main.706102d6.chunk.js"
+    "static/js/main.45786145.chunk.js"
   ]
 }
