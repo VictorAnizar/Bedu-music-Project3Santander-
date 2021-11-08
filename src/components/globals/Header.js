@@ -54,9 +54,9 @@ const Header = () => {
             />
           </Form>
           <Nav className="me-auto">
-            <LinkContainer to="/tu-musica">
+            {/* <LinkContainer to="/tu-musica">
               <Nav.Link>Tu Musica</Nav.Link>
-            </LinkContainer>
+            </LinkContainer> */}
             <LinkContainer to="/descubre">
               <Nav.Link>Descubre</Nav.Link>
             </LinkContainer>
