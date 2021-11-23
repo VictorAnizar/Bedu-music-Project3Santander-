@@ -11,8 +11,17 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+const darkTheme = createTheme({
+        palette: {
 
+        dark:{
+             main: '#333333',
+             contrastText: '#fff'
+        }       
+    },
+  });
 
 function AudioCards(props) {
     return (
@@ -20,7 +29,7 @@ function AudioCards(props) {
             {//console.log(props.albums)}
             }
             {props.albums.map((album, index) => (
-                <Card sx={{ maxWidth: 345, borderRadius: 1, margin:10}} key={index}>
+                <Card sx={{ maxWidth: 345, borderRadius: 1, margin:6, paddingBottom:2}} key={index}>
                     <CardMedia
                         component="img"
                         height={album.images[1].height}
@@ -42,10 +51,12 @@ function AudioCards(props) {
                             <ShareIcon />
                         </IconButton>
                     </CardActions>
-                    <Button variamt="contained" className={album.name}
-                        onClick={(e) => props.updatePlaylist(e, props.albums[index])} variant="contained">
+                    <ThemeProvider theme={darkTheme}>
+                    <Button variant="contained" color="dark" className={album.name}
+                        onClick={(e) => props.updatePlaylist(e, props.albums[index])} >
                         <i className={album.name}> Escuchar Playlist</i>
                     </Button>
+                    </ThemeProvider>
                 </Card>
             ))
             };

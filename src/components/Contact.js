@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/**import React, { useState } from "react";
 import emailjs, { send } from "emailjs-com";
 import swal from "sweetalert";
 import "../css/contact.css";
@@ -127,3 +127,4 @@ const Contact = () => {
 };
 
 export default Contact;
+**/
